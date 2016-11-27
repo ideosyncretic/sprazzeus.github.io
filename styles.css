@@ -155,14 +155,15 @@ ul {
     float: none;
     width: 100%;
   }
-
   .main {
-    overflow: none;
+    overflow: visible;
     -webkit-overflow-scrolling: none;
   }
-
   .portrait {
     background-position: top;
     height: 50%;
+  }
+  .nav-dots {
+    display: none;
   }
 }
