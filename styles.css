@@ -70,6 +70,7 @@ input, textarea {
   display: block;
   /*color: #7AA6F5;*/
   color: #3073F9;
+  -webkit-appearance: none;
 }
 
 textarea {
