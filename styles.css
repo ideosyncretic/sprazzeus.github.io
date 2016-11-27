@@ -14,38 +14,14 @@ body {
   height: 100vh;
 }
 
-ul {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-}
-
-.nav li, li a:after {
-  border: 2px solid #3073F9;
-  background: none;
-  height: 0.8rem;
-  width: 0.8rem;
-  border-radius: 50%;
-  content: none;
-  margin: 1rem;
-}
-
-.nav li {
-  transition: all 0.2s ease-in-out;
-}
-
-.nav li:hover {
-  /*transform: scale(1.5);*/
-  background: #3073F9;
-}
-
-.nav a:hover {
-  background: none;
+h1 {
+  font-size: 2rem;
 }
 
 h2 {
   padding-top: 2rem;
   padding-bottom: 0.35rem;
+  font-size: 1.8rem;
 }
 
 h2:before {
@@ -79,6 +55,10 @@ a:after {
   content: ' →';
 }
 
+li {
+  margin-bottom: 1rem;
+}
+
 input, textarea {
   background: #ddcce8;
   border: 1px solid #ddcce8;
@@ -97,15 +77,44 @@ textarea {
   width: 100%;
 }
 
+textarea, .main {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .button {
   background: #3979f9;
   color: #EDDEF2;
 }
 
-textarea, .main {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+ul {
+  position: absolute;
+  right: 0.1rem;
+  top: 40%;
+}
+
+.nav li, li a:after {
+  border: 2px solid #3073F9;
+  background: none;
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+  content: none;
+  margin: 1rem;
+}
+
+.nav li {
+  transition: all 0.2s ease-in-out;
+}
+
+.nav li:hover {
+  /*transform: scale(1.5);*/
+  background: #3073F9;
+}
+
+.nav a:hover {
+  background: none;
 }
 
 .anchor, .anchor:after {
@@ -138,4 +147,22 @@ textarea, .main {
   background-position: center;
   width: 33%;
   height: 100vh;
+}
+
+
+@media (max-width: 600px) {
+  .main, .portrait {
+    float: none;
+    width: 100%;
+  }
+
+  .main {
+    overflow: none;
+    -webkit-overflow-scrolling: none;
+  }
+
+  .portrait {
+    background-position: top;
+    height: 50%;
+  }
 }
