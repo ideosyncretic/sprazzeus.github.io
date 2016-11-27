@@ -9,45 +9,55 @@
   <body>
     <div class='main'>
       <div class='content'>
-        <h1>Hello there, I'm Angel Coco Chen, a designer-turned-developer based in Singapore.</h1>
-        <p>I care about clarity and believe that systems should work for people.</p>
 
-        <h2>Projects</h2>
-        <ul>
-          <li>Thrifty (front-end web dev)</li>
-          <li>Fitness Ration (UX/UI design)</li>
-          <li>Clare Chong – Filmmaker, Artist (branding)</li>
-        </ul>
+        <div class='intro'>
+          <h1>Hello there, I'm Angel Coco Chen, a designer-turned-developer based in Singapore.</h1>
+          <p>I care about clarity and believe that systems should work for people.</p>
+        </div>
 
-        <h2>Work</h2>
-        <ul>
-          <li>Fitness Ration</li>
-          <li>Standard Chartered</li>
-          <li>Nuisance Labs</li>
-        </ul>
-        <a href='https://docs.google.com/document/d/1yOfFcXZcFrMnDlNtXm8ormQjcSUN_4Za2ElvmwNgYK0/edit?usp=sharing'>Download resume (pdf)</a>
+        <div class='projects'>
+          <h2>Recent</h2>
+          <ul>
+            <li>Thrifty (front-end web dev)</li>
+            <li>Fitness Ration (UX/UI design)</li>
+            <li>Clare Chong – Filmmaker, Artist (branding)</li>
+          </ul>
+        </div>
 
+        <div class='work'>
+          <h2>Work</h2>
+          <ul>
+            <li>Fitness Ration</li>
+            <li>Standard Chartered</li>
+            <li>Nuisance Labs</li>
+          </ul>
+          <a href='https://docs.google.com/document/d/1yOfFcXZcFrMnDlNtXm8ormQjcSUN_4Za2ElvmwNgYK0/edit?usp=sharing'>Download resume (pdf)</a>
+        </div>
 
-        <h2>Links</h2>
-        <a href='https://github.com/sprazzeus' target='_blank'>GitHub</a>
-        <a href='https://www.behance.net/Sprazzeus' target='_blank'>Behance</a>
-        <a href='https://www.linkedin.com/in/angelcocochen' target='_blank'>LinkedIn</a>
+        <div class='links'>
+          <h2>Links</h2>
+          <a href='https://github.com/sprazzeus' target='_blank'>GitHub</a>
+          <a href='https://www.behance.net/Sprazzeus' target='_blank'>Behance</a>
+          <a href='https://www.linkedin.com/in/angelcocochen' target='_blank'>LinkedIn</a>
+        </div>
 
-        <h2>Connect</h2>
-        <p>Send a message to <em>angel@nuisance.co</em> </p>
+        <div class='connect'>
+          <h2>Connect</h2>
+          <p>Send a message to <em>angel@nuisance.co</em> </p>
+          <form class="form-email" action="https://formspree.io/angel@nuisance.co" method="POST" data-success="Thanks for your message, we will be in touch shortly." data-error="Please fill all fields correctly.">
 
-        <form class="form-email" action="https://formspree.io/angel@nuisance.co" method="POST" data-success="Thanks for your message, we will be in touch shortly." data-error="Please fill all fields correctly.">
+            <label for='name'>Your name</label>
+            <input type="text" class="validate-required" name="name" id='name' required />
 
-          <label for='name'>Your Name</label>
-          <input type="text" class="validate-required" name="name" id='name' required />
+            <label for='email'>Your email</label>
+            <input type="text" class="validate-required validate-email" name="_replyto" id='email' required />
 
-          <label for='email'>Your Email</label>
-          <input type="text" class="validate-required validate-email" name="_replyto" id='email' required />
+            <label for='message'>Message</label>
+            <textarea class="validate-required" name="message" id='message' rows="4" required></textarea>
+            <input type="submit" value="Send Message"/>
+          </form>
+        </div>
 
-          <label for='message'>Message</label>
-          <textarea class="validate-required" name="message" id='message' rows="4" required></textarea>
-          <input type="submit" value="Send Message"/>
-        </form>
       </div>
     </div>
 

@@ -1,6 +1,8 @@
-html, body {
+html, body, li {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -68,9 +70,7 @@ textarea {
 }
 
 .main {
-  padding: 0.8rem;
-  padding-bottom: 2rem;
-  background: #3073F9;
+  /*background: #3073F9;*/
   float: left;
   width: 67%;
   max-height: 100%;
@@ -79,6 +79,31 @@ textarea {
   -webkit-box-sizing: border-box;
   	-moz-box-sizing: border-box;
   	box-sizing: border-box;
+}
+
+.intro, .projects, .work, .links, .connect {
+  padding: 0.8rem;
+  padding-bottom: 2rem;
+}
+
+.intro {
+  background: #3073F9;
+}
+
+.projects {
+  background-color: rgba(48, 115, 249, 0.9)
+}
+
+.work {
+  background-color: rgba(48, 115, 249, 1)
+}
+
+.links {
+  background-color: rgba(48, 115, 249, 0.9)
+}
+
+.connect {
+  background: #3073F9;
 }
 
 /*670px width breakpoint*/
