@@ -1,4 +1,4 @@
-html, body, li {
+html, body, ul {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -9,9 +9,38 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-size: 17px;
   letter-spacing: 1px;
-  /*color: #4b4b4b;*/
-  color: #EDDEF2;
+  background: #EDDEF2;
+  color: #3073F9;
   height: 100vh;
+}
+
+ul {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+}
+
+.nav li, li a:after {
+  border: 2px solid #3073F9;
+  background: none;
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+  content: none;
+  margin: 1rem;
+}
+
+.nav li {
+  transition: all 0.2s ease-in-out;
+}
+
+.nav li:hover {
+  /*transform: scale(1.5);*/
+  background: #3073F9;
+}
+
+.nav a:hover {
+  background: none;
 }
 
 h2 {
@@ -19,31 +48,31 @@ h2 {
   padding-bottom: 0.35rem;
 }
 
-  h2:before {
-    content: '<';
-  }
+h2:before {
+  content: '<';
+}
 
-  h2:after {
-    content: ' />'
-  }
+h2:after {
+  content: ' />'
+}
 
-  h2:before, h2:after {
-    opacity: 0.30;
-    letter-spacing: 10px;
-  }
+h2:before, h2:after {
+  opacity: 0.30;
+  letter-spacing: 10px;
+}
 
-p, ul li {
+h3, p {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 a {
-  color: #EDDEF2;
+  color: #3073F9;
   padding-right: 1rem;
 }
 
 a:hover {
-  background-color: #7AA6F5;
+  background-color: #ddcce8;
 }
 
 a:after {
@@ -51,59 +80,53 @@ a:after {
 }
 
 input, textarea {
-  background: #EDDEF2;
+  background: #ddcce8;
+  border: 1px solid #ddcce8;
   outline: none;
-  border: 1px solid #EDDEF2;
   font-size: 17px;
   font-family: 'Work Sans';
   margin-bottom: 10px;
   padding: 1rem;
   display: block;
+  /*color: #7AA6F5;*/
+  color: #3073F9;
 }
 
 textarea {
   max-width: 30rem;
   width: 100%;
+}
+
+.button {
+  background: #3979f9;
+  color: #EDDEF2;
+}
+
+textarea, .main {
   -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.anchor, .anchor:after {
+  text-decoration: none;
+  content: none;
+  padding-right: 0;
 }
 
 .main {
-  /*background: #3073F9;*/
+  background: #EDDEF2;
   float: left;
   width: 67%;
   max-height: 100%;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
-  -webkit-box-sizing: border-box;
-  	-moz-box-sizing: border-box;
-  	box-sizing: border-box;
 }
 
 .intro, .projects, .work, .links, .connect {
   padding: 0.8rem;
   padding-bottom: 2rem;
-}
-
-.intro {
-  background: #3073F9;
-}
-
-.projects {
-  background-color: rgba(48, 115, 249, 0.9)
-}
-
-.work {
-  background-color: rgba(48, 115, 249, 1)
-}
-
-.links {
-  background-color: rgba(48, 115, 249, 0.9)
-}
-
-.connect {
-  background: #3073F9;
+  width: 80%;
 }
 
 /*670px width breakpoint*/
