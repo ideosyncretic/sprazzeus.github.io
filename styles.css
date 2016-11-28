@@ -26,6 +26,9 @@ h2 {
 
 h2:before {
   content: '<';
+  margin-top: -2rem;
+  padding-top: 2.5rem;
+  display: inline-block;
 }
 
 h2:after {
