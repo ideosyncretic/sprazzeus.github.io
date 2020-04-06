@@ -13,11 +13,27 @@
   </head>
 
   <body>
+        <script>
+          var example = ['Hello', '你好', 'Selamat', 'Bom dia', 'Guten tag', 'Salut', 'Hola'];
+
+          textSequence(0);
+          function textSequence(i) {
+            if (example.length > i) {
+              setTimeout(function () {
+                document.getElementById("sequence").innerHTML = example[i];
+                textSequence(++i);
+              }, 1500); // 1 second (in milliseconds)
+
+            } else if (example.length == i) { // Loop
+              textSequence(0);
+            }
+          }
+        </script>
     <div class="main">
       <div class="inner">
         <div class="intro section">
           <h4 class="bold">āc<h4>
-          <h1>Hello! I'm Angel Chen.</h1>
+          <h1><span id="sequence">Hello</span>, I'm Angel Chen.</h1>
           <h3>
             I care about asking the <span class="underline">right questions</span>, honing our
             <span class="underline">ways of working</span>, and
